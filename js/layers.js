@@ -27,8 +27,8 @@ addLayer("h", {
     layerShown(){return true},
     upgrades: {
         11: {
-            title: "Make this whatever you want!",
-            description: "Double your point gain.",
+            title: "H2",
+            description: "Double Particle gain.",
             cost: new Decimal(1),            
         },
     },
