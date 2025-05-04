@@ -27,9 +27,7 @@ addLayer("h", {
     layerShown(){return true},
     upgrades: {
         11: {
-            title: "H2",
-            description: "Double Particle gain.",
-            cost: new Decimal(1),            
+                   
         },
     },
 })
