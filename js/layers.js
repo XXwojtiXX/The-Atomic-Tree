@@ -25,12 +25,5 @@ addLayer("h", {
         {key: "h", description: "H: Reset for Hydrogen", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true}
-}),    upgrades: {
-    11: {
-        title: "H2",
-        description: "Add one to Particle gain",
-        cost: new Decimal(1),
-        if (hasUpgrade('h', 11)) gain = gain.times(2)
-    },
-    },
+})
 
