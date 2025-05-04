@@ -25,10 +25,10 @@ addLayer("h", {
         {key: "h", description: "H: Reset for Hydrogen", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true},
-    upgrades: {
-        11: {
+    upgrades: {11: {
                    
-        },
+    },
+        
     },
 })
 
