@@ -18,8 +18,8 @@ let VERSION = {
 
 let changelog = `<h1>Changelog:</h1><br>
 	<h3>v0.0</h3><br>
-		- Added things.<br>
-		- Added stuff.`
+		- Endgame : 100000 Particles .<br>
+		- Added Hydrogen.`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
@@ -43,8 +43,7 @@ function getPointGen() {
 
 	let gain = new Decimal(1)
 	return gain
-	if (hasUpgrade('p', 11)) gain = gain.times(2)
-		
+	if (hasUpgrade('h', 11)) gain = gain.times(2)
 }
 
 // You can add non-layer related variables that should to into "player" and be saved here, along with default values
