@@ -43,6 +43,8 @@ function getPointGen() {
 
 	let gain = new Decimal(1)
 	return gain
+	if (hasUpgrade('p', 11)) gain = gain.times(2)
+		
 }
 
 // You can add non-layer related variables that should to into "player" and be saved here, along with default values
