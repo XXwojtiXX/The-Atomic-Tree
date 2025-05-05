@@ -29,7 +29,7 @@ addLayer("h", {
         11: {
             title: "H2",
             description: "Double Particle gain",
-            cost: new Decimal(1),
+            cost: new Decimal(1), 
         },
     },
 })
