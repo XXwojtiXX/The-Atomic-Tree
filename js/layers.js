@@ -16,7 +16,6 @@ addLayer("h", {
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
         if (hasUpgrade('h', 12)) mult = mult.times(2)
-        if (hasUpgrade('h', 13)) mult = mult.times(upgradeEffect('h', 13))
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
@@ -37,15 +36,6 @@ addLayer("h", {
             title: "H+",
             description: "Double Hydrogen Gain",
             cost: new Decimal(3),
-        },
-        13: {
-            title: "H-",
-            description: "Boost Point gain based on Hydrogen",
-            cost: new Decimal(10),
-            effect() {
-                return player[this.layer].points.add(1).pow(0.5)
-            },
-            effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" },
         },
     },
 })
