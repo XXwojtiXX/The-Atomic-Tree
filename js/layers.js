@@ -15,6 +15,7 @@ addLayer("h", {
     exponent: 0.5, // Prestige currency exponent
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
+        if (hasUpgrade('h', 12)) mult = mult.times(2)
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
@@ -30,6 +31,11 @@ addLayer("h", {
             title: "H2",
             description: "Double Particle gain",
             cost: new Decimal(1), 
+        },
+        12: {
+            title: "H+",
+            description: "Double Hydrogen Gain",
+            cost: new Decimal(3),
         },
     },
 })
